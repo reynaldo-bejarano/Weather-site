@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather site</title>
+  <!-- ======== BOX-ICONS ======= -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <!-- ======== Google Fonts ======= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
+  <!-- ======== CSS ======= -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" sizes="16x16">
+</head>
+
+<body>
+
+  <main class="card">
+    <div class="weather__card">
+      <div class="weather__search">
+
+        <input class="weather__input" type="text" placeholder="Search" id="search">
+        <button class="search__button"><i class='bx bx-search-alt search__icon'></i></button>
+
+      </div>
+      <div class="weather__data">
+        <h2 class="time" id="timeNow">10:50 pm</h2>
+        <h3 class="weather__city city" id="zone"></h3>
+        <h1 class="weather__temperature temp"></h1>
+        <div class="weather__clouds">
+          <img src="" alt="" class="weather__clouds_icon icon">
+          <p class="weather__clouds_text description"></p>
+        </div>
+        <p class="weather__clouds_text humidity"></p>
+        <p class="weather__clouds_text speed"></p>
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__text">Built by Reynaldo Bejarano
+      <script>new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());</script>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
